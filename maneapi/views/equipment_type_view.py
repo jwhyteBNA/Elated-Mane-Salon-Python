@@ -65,4 +65,5 @@ class EquipmentTypeSerializer(serializers.ModelSerializer):
     class Meta:
         """JSON serializer for equipmentType creator"""
         model = EquipmentType
-        fields = ( 'id', 'label', )
+        fields = ( 'id', 'label', 'tools', )
+        depth=1

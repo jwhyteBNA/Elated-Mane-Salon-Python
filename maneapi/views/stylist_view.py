@@ -63,4 +63,5 @@ class StylistSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'first_name', 'last_name', 'email', 'username',)
+        fields = ('id', 'first_name', 'last_name', 'email', 'username', 'clients', 'equipment')
+        depth=1
